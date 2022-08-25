@@ -13,7 +13,7 @@ struct Meal {
     let price: Double
     let image: UIImage?
     var feedbacks: [Feedback] = []
-    
+
     var ratingBar: String {
         if let rating = rating {
             return String(repeating: "⭐️", count: Int(rating.rounded(.up))) // делает округление control command пробел
@@ -21,7 +21,7 @@ struct Meal {
             return "There are no rewievs yet"
         }
     }
-                          
+
     private var rating: Double? {
         if feedbacks.isEmpty {
             return nil

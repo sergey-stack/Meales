@@ -21,6 +21,5 @@ struct Feedback {
         dateFormatter.timeStyle = .short
         dateFormatter.locale = Locale(identifier: "ru_Ru")
         return dateFormatter.string(from: date)
-        
     }
 }
